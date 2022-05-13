@@ -39,8 +39,8 @@
             this.listAlternativas = new System.Windows.Forms.ListBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textAlternativa = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnAdcionar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnGravar
@@ -52,6 +52,7 @@
             this.btnGravar.TabIndex = 0;
             this.btnGravar.Text = "Gravar";
             this.btnGravar.UseVisualStyleBackColor = true;
+            this.btnGravar.Click += new System.EventHandler(this.btnGravar_Click_1);
             // 
             // btnCancelar
             // 
@@ -70,6 +71,7 @@
             this.comboDisciplina.Name = "comboDisciplina";
             this.comboDisciplina.Size = new System.Drawing.Size(367, 23);
             this.comboDisciplina.TabIndex = 2;
+            this.comboDisciplina.SelectedValueChanged += new System.EventHandler(this.comboDisciplina_SelectedValueChanged);
             // 
             // comboMateria
             // 
@@ -138,15 +140,6 @@
             this.textAlternativa.Size = new System.Drawing.Size(229, 23);
             this.textAlternativa.TabIndex = 10;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(291, 226);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 24);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Adicionar ";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -156,13 +149,23 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "Resposta";
             // 
+            // btnAdcionar
+            // 
+            this.btnAdcionar.Location = new System.Drawing.Point(306, 226);
+            this.btnAdcionar.Name = "btnAdcionar";
+            this.btnAdcionar.Size = new System.Drawing.Size(75, 24);
+            this.btnAdcionar.TabIndex = 13;
+            this.btnAdcionar.Text = "Adicionar ";
+            this.btnAdcionar.UseVisualStyleBackColor = true;
+            this.btnAdcionar.Click += new System.EventHandler(this.btnAdcionar_Click);
+            // 
             // CadastroQuestão
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(426, 493);
+            this.Controls.Add(this.btnAdcionar);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.textAlternativa);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.listAlternativas);
@@ -196,7 +199,7 @@
         private System.Windows.Forms.ListBox listAlternativas;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textAlternativa;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnAdcionar;
     }
 }

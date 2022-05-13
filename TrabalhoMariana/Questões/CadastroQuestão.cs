@@ -47,24 +47,48 @@ namespace GestãoTeste.Questões
             }
         }
 
-        private void btnGravar_Click(object sender, EventArgs e)
+
+        private void btnGravar_Click_1(object sender, EventArgs e)
         {
+
             questao.Enunciado = textEnunciado.Text;
             questao.Materias = (Materia)comboMateria.SelectedItem;
             questao.Respostas = respostas;
+            questao.quantidadeAltermativas = respostas.Count;
+            var resultadoValidacao = GravarRegistro(Questao);
+
+            if (resultadoValidacao.IsValid == false)
+            {
+                string erro = resultadoValidacao.Errors[0].ErrorMessage;
+                DialogResult = DialogResult.None;
+            }
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+
+        private void comboDisciplina_SelectedValueChanged(object sender, EventArgs e)
         {
+
+            Disciplinas disciplinaSelecionada = (Disciplinas)comboDisciplina.SelectedItem;
+
+            foreach (var item in disciplinaSelecionada.Materias)
+            {
+                 comboMateria.Items.Add(item);
+            }
+        }
+
+        private void btnAdcionar_Click(object sender, EventArgs e)
+        {
+            
             this.resposta = new Respostas();
             resposta.Resposta = textAlternativa.Text;
             respostas.Add(resposta);
+            listAlternativas.Items.Clear();
             foreach (var item in respostas)
             {
                 listAlternativas.Items.Add(item);
             }
         }
 
-
+       
     }
 }

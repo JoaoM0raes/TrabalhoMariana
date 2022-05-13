@@ -10,5 +10,9 @@ namespace GestaoTestes.Dominio.ModuloQuestões
     {
         public string Resposta { get; set; }
         public bool Correta { get; set; }
+        public override string ToString()
+        {
+            return $"resposta: {Resposta}";
+        }
     }
 }

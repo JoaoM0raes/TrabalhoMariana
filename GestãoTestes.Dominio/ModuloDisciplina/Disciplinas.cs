@@ -15,6 +15,16 @@ namespace GestãoTestes.Dominio.ModuloDisciplina
         {
             this.Nome = registro.Nome;
         }
+        public List<Materia> Materias { get; set; }
+
+        internal void AdicionarMateria(Materia materia)
+        {
+            if (Materias == null)
+                Materias = new List<Materia>();
+
+            Materias.Add(materia);
+        }
+
         public override string ToString()
         {
             return $"disciplina: {Nome}";

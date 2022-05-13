@@ -13,10 +13,13 @@ namespace GestãoTestes.Dominio.ModuloQuestões
         public string Enunciado { get; set; }
         public List<Respostas> Respostas { get; set; }
         public Materia Materias { get; set; }
-
+        public int quantidadeAltermativas { get; set; }
         public override void Atualizar(Questão registro)
         {
-
+            this.Respostas = registro.Respostas;
+            this.Enunciado = registro.Enunciado;
+            this.Materias = registro.Materias;  
         }
+        
     }
 }

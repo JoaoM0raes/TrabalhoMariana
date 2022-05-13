@@ -54,7 +54,9 @@ namespace GestãoTeste.Matéria
 
                 materia.Serie = 2;
             }
+
             materia.Disciplina = (Disciplinas)comboDisciplina.SelectedItem;
+
             var resultadoValidacao = GravarRegistro(Materia);
 
             if (resultadoValidacao.IsValid == false)

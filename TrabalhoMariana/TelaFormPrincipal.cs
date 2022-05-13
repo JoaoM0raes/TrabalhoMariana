@@ -121,7 +121,7 @@ namespace TrabalhoMariana
 
             controladores.Add("Disciplinas", new ControladorDisciplina(repositorioDisciplina));
             controladores.Add("Matéria", new ControladorMatéria(repositorioDisciplina,repositorioMatéria));
-            controladores.Add("Questao", new ControladorQuestao( repositorioMatéria, repositorioQuestao, repositorioDisciplina));
+            controladores.Add("Questões", new ControladorQuestao( repositorioMatéria, repositorioQuestao, repositorioDisciplina));
 
         }
 
