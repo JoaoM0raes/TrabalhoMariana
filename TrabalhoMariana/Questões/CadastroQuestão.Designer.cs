@@ -30,8 +30,8 @@
         {
             this.btnGravar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboDisciplina = new System.Windows.Forms.ComboBox();
+            this.comboMateria = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -63,21 +63,21 @@
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // comboDisciplina
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(39, 27);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(367, 23);
-            this.comboBox1.TabIndex = 2;
+            this.comboDisciplina.FormattingEnabled = true;
+            this.comboDisciplina.Location = new System.Drawing.Point(39, 27);
+            this.comboDisciplina.Name = "comboDisciplina";
+            this.comboDisciplina.Size = new System.Drawing.Size(367, 23);
+            this.comboDisciplina.TabIndex = 2;
             // 
-            // comboBox2
+            // comboMateria
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(39, 71);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(367, 23);
-            this.comboBox2.TabIndex = 3;
+            this.comboMateria.FormattingEnabled = true;
+            this.comboMateria.Location = new System.Drawing.Point(39, 71);
+            this.comboMateria.Name = "comboMateria";
+            this.comboMateria.Size = new System.Drawing.Size(367, 23);
+            this.comboMateria.TabIndex = 3;
             // 
             // label1
             // 
@@ -170,8 +170,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboMateria);
+            this.Controls.Add(this.comboDisciplina);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGravar);
             this.MaximizeBox = false;
@@ -187,8 +187,8 @@
 
         private System.Windows.Forms.Button btnGravar;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboDisciplina;
+        private System.Windows.Forms.ComboBox comboMateria;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

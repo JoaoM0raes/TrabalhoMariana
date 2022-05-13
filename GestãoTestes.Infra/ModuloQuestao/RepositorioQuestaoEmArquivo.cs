@@ -1,12 +1,27 @@
-﻿namespace TrabalhoMariana
-{
-    public class RepositorioQuestaoEmArquivo
-    {
-        private object contextoDados;
+﻿using FluentValidation;
+using GestãoTestes.Dominio.ModuloMatéria;
+using GestãoTestes.Dominio.ModuloQuestões;
+using GestaoTestes.Dominio.ModuloQuestões;
+using GestãoTestes.Infra.Compartilhado;
+using System.Collections.Generic;
 
-        public RepositorioQuestaoEmArquivo(object contextoDados)
+namespace TrabalhoMariana
+{
+    public class RepositorioQuestaoEmArquivo : RepositorioEmArquivoBase<Questão>, IrepositorioQuestao
+    {
+        public RepositorioQuestaoEmArquivo(DataContext dataContext) : base(dataContext)
         {
-            this.contextoDados = contextoDados;
+
+        }
+
+        public override List<Questão> ObterRegistros()
+        {
+            return dataContext.Questões;
+        }
+
+        public override AbstractValidator<Questão> ObterValidador()
+        {
+            return new ValidadorQuestao();
         }
     }
 }

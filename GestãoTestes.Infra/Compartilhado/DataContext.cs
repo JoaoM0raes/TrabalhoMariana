@@ -53,8 +53,10 @@ namespace GestãoTestes.Infra.Compartilhado
                 this.Disciplinas.AddRange(ctx.Disciplinas);
             if(ctx.Matérias.Any())
                 this.Matérias.AddRange(ctx.Matérias);
+            if (ctx.Questões.Any())
+                this.Questões.AddRange(ctx.Questões);
 
-            
+
         }
     }
 }

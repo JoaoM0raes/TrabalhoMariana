@@ -1,6 +1,7 @@
 ﻿using GestãoTeste.Compartilhado;
 using GestãoTeste.Disciplina;
 using GestãoTeste.Matéria;
+using GestaoTeste.Questões;
 using GestãoTestes.Infra.Compartilhado;
 using System;
 using System.Collections.Generic;
@@ -120,6 +121,7 @@ namespace TrabalhoMariana
 
             controladores.Add("Disciplinas", new ControladorDisciplina(repositorioDisciplina));
             controladores.Add("Matéria", new ControladorMatéria(repositorioDisciplina,repositorioMatéria));
+            controladores.Add("Questao", new ControladorQuestao( repositorioMatéria, repositorioQuestao, repositorioDisciplina));
 
         }
 

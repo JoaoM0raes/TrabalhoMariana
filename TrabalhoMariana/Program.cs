@@ -1,5 +1,6 @@
-using Gest„oTestes.Infra.Compartilhado;
-using Gest„oTestes.Infra.Serializadores;
+
+using Gest√£oTestes.Infra.Compartilhado;
+using Gest√£oTestes.Infra.Serializadores;
 using System;
 using System.Collections.Generic;
 using System.Linq;

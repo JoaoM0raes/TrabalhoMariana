@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestãoTeste", "TrabalhoMariana\GestãoTeste.csproj", "{A220C08C-5795-41B8-85B9-505213A14765}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestaoTeste", "TrabalhoMariana\GestaoTeste.csproj", "{A220C08C-5795-41B8-85B9-505213A14765}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestãoTestes.Dominio", "GestãoTestes.Dominio\GestãoTestes.Dominio.csproj", "{323B0F9D-E4FA-4ADA-847C-165C92EAA85C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestaoTestes.Dominio", "GestãoTestes.Dominio\GestaoTestes.Dominio.csproj", "{323B0F9D-E4FA-4ADA-847C-165C92EAA85C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Apresentação", "1-Apresentação", "{B3ACDB79-89D0-44E8-801E-ABC1D20CAB63}"
 EndProject
@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Dominio", "2-Dominio", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-infra", "3-infra", "{E9CF2A1E-CC00-41A8-AEAA-C5959B23AA74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestãoTestes.Infra", "GestãoTestes.Infra\GestãoTestes.Infra.csproj", "{97CF9812-51DB-4244-B9A1-C1459CB06CE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestaoTestes.Infra", "GestãoTestes.Infra\GestaoTestes.Infra.csproj", "{97CF9812-51DB-4244-B9A1-C1459CB06CE7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

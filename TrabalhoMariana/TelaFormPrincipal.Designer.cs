@@ -66,7 +66,7 @@
             // 
             // btnInserir
             // 
-            this.btnInserir.Image = global::GestãoTeste.Properties.Resources.add_FILL0_wght400_GRAD0_opsz48;
+            this.btnInserir.Image = global::GestaoTeste.Properties.Resources.add_FILL0_wght400_GRAD0_opsz48;
             this.btnInserir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnInserir.Name = "btnInserir";
             this.btnInserir.Size = new System.Drawing.Size(78, 20);
@@ -75,7 +75,7 @@
             // 
             // btnEditar
             // 
-            this.btnEditar.Image = global::GestãoTeste.Properties.Resources.edit_FILL0_wght400_GRAD0_opsz48;
+            this.btnEditar.Image = global::GestaoTeste.Properties.Resources.edit_FILL0_wght400_GRAD0_opsz48;
             this.btnEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(57, 20);
@@ -84,7 +84,7 @@
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Image = global::GestãoTeste.Properties.Resources.delete_FILL0_wght400_GRAD0_opsz48;
+            this.btnExcluir.Image = global::GestaoTeste.Properties.Resources.delete_FILL0_wght400_GRAD0_opsz48;
             this.btnExcluir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(62, 20);

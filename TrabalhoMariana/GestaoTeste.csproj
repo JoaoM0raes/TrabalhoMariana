@@ -8,8 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GestãoTestes.Dominio\GestãoTestes.Dominio.csproj" />
-    <ProjectReference Include="..\GestãoTestes.Infra\GestãoTestes.Infra.csproj" />
+    <ProjectReference Include="..\GestãoTestes.Dominio\GestaoTestes.Dominio.csproj" />
+    <ProjectReference Include="..\GestãoTestes.Infra\GestaoTestes.Infra.csproj" />
   </ItemGroup>
 
   <ItemGroup>
