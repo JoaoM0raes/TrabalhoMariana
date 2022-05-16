@@ -2,6 +2,7 @@
 using GestãoTeste.Disciplina;
 using GestãoTeste.Matéria;
 using GestaoTeste.Questões;
+using GestaoTeste.Teste;
 using GestãoTestes.Infra.Compartilhado;
 using System;
 using System.Collections.Generic;
@@ -62,6 +63,7 @@ namespace TrabalhoMariana
             btnInserir.Enabled = configuracao.InserirHabilitado;
             btnEditar.Enabled = configuracao.EditarHabilitado;
             btnExcluir.Enabled = configuracao.ExcluirHabilitado;
+            toolTipPdf.Enabled = configuracao.AdicionarItensPdf;
             
        
         }
@@ -70,6 +72,7 @@ namespace TrabalhoMariana
             btnInserir.ToolTipText = configuracao.TooltipInserir;
             btnEditar.ToolTipText = configuracao.TooltipEditar;
             btnExcluir.ToolTipText = configuracao.TooltipExcluir;
+            toolTipPdf.ToolTipText = configuracao.TooltipPdf;
          
            
         }
@@ -106,7 +109,7 @@ namespace TrabalhoMariana
 
             panelRegistros.Controls.Clear();
 
-            panelRegistros.Dock= DockStyle.Fill;
+            listagemControl.Dock= DockStyle.Fill;
 
             panelRegistros.Controls.Add(listagemControl);
         }
@@ -122,6 +125,7 @@ namespace TrabalhoMariana
             controladores.Add("Disciplinas", new ControladorDisciplina(repositorioDisciplina));
             controladores.Add("Matéria", new ControladorMatéria(repositorioDisciplina,repositorioMatéria));
             controladores.Add("Questões", new ControladorQuestao( repositorioMatéria, repositorioQuestao, repositorioDisciplina));
+            controladores.Add("Testes ", new ControladorTeste( repositorioQuestao, repositorioMatéria, repositorioDisciplina, repositorioTeste));
 
         }
 
@@ -138,6 +142,11 @@ namespace TrabalhoMariana
         private void btnExcluir_Click(object sender, EventArgs e)
         {
             controlador.Excluir();
+        }
+
+        private void toolTipPdf_Click(object sender, EventArgs e)
+        {
+            controlador.InserirPdf();
         }
     }
 }

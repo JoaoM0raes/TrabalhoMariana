@@ -28,12 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaFormPrincipal));
             this.toolBox1 = new System.Windows.Forms.ToolStrip();
             this.btnInserir = new System.Windows.Forms.ToolStripButton();
             this.btnEditar = new System.Windows.Forms.ToolStripButton();
             this.btnExcluir = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.toolTipPdf = new System.Windows.Forms.ToolStripButton();
             this.labelTipoCadastro = new System.Windows.Forms.ToolStripLabel();
             this.toolBox = new System.Windows.Forms.MenuStrip();
             this.cadastrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,10 +52,9 @@
             this.btnInserir,
             this.btnEditar,
             this.btnExcluir,
-            this.toolStripButton4,
+            this.toolTipPdf,
             this.labelTipoCadastro});
             this.toolBox1.Location = new System.Drawing.Point(0, 24);
-            this.toolBox1.MinimumSize = new System.Drawing.Size(0, 0);
             this.toolBox1.Name = "toolBox1";
             this.toolBox1.Padding = new System.Windows.Forms.Padding(5);
             this.toolBox1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
@@ -91,13 +89,14 @@
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
-            // toolStripButton4
+            // toolTipPdf
             // 
-            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(117, 20);
-            this.toolStripButton4.Text = "Vizualizar Em pdf";
+            this.toolTipPdf.Image = global::GestaoTeste.Properties.Resources.picture_as_pdf_FILL0_wght400_GRAD0_opsz48;
+            this.toolTipPdf.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolTipPdf.Name = "toolTipPdf";
+            this.toolTipPdf.Size = new System.Drawing.Size(117, 20);
+            this.toolTipPdf.Text = "Vizualizar Em pdf";
+            this.toolTipPdf.Click += new System.EventHandler(this.toolTipPdf_Click);
             // 
             // labelTipoCadastro
             // 
@@ -198,7 +197,7 @@
         private System.Windows.Forms.ToolStripButton btnInserir;
         private System.Windows.Forms.ToolStripButton btnEditar;
         private System.Windows.Forms.ToolStripButton btnExcluir;
-        private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.ToolStripButton toolTipPdf;
         private System.Windows.Forms.MenuStrip toolBox;
         private System.Windows.Forms.ToolStripMenuItem cadastrosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem disciplinasMenuItem;

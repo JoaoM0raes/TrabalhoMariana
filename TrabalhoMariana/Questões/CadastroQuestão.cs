@@ -21,12 +21,15 @@ namespace GestãoTeste.Questões
         private Respostas resposta;
         private List<Respostas> respostas = new List<Respostas>();
         private Materia materias;
+        private int i;
+        const string letras = " abcde";
         public CadastroQuestão(List<Materia> materias, List<Disciplinas> disciplinas)
         {
+             this.i= 0;
             InitializeComponent();
-            atualizarComponentes(disciplinas, materias);
+            atualizarComponentes(disciplinas);
         }
-        public void atualizarComponentes(List<Disciplinas> disciplinas, List<Materia> materias)
+        public void atualizarComponentes(List<Disciplinas> disciplinas)
         {
             comboDisciplina.Items.Clear();
             foreach (var item in disciplinas)
@@ -78,15 +81,31 @@ namespace GestãoTeste.Questões
 
         private void btnAdcionar_Click(object sender, EventArgs e)
         {
-            
-            this.resposta = new Respostas();
-            resposta.Resposta = textAlternativa.Text;
-            respostas.Add(resposta);
             listAlternativas.Items.Clear();
+
+            i++;
+
+            this.resposta = new Respostas();
+
+            if (i == 5)
+            {
+                btnAdcionar.Enabled = false;
+                MessageBox.Show("No máximo 5 respostas podem ser criadas",
+                "Respostas", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                
+            }
+
+            resposta.Resposta = letras[i] + ")" + textAlternativa.Text; 
+
+            respostas.Add(resposta);
+
+           
+           
             foreach (var item in respostas)
             {
                 listAlternativas.Items.Add(item);
             }
+            
         }
 
        

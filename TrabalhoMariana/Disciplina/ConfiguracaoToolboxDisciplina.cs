@@ -11,5 +11,7 @@ namespace GestãoTeste.Disciplina
         public override string TooltipEditar => "Editar uma Despesa Disciplina";
 
         public override string TooltipExcluir => "Excluir uma Despesa Disciplina";
+
+        public override string TooltipPdf => "";
     }
 }

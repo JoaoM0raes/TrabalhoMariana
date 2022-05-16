@@ -10,9 +10,20 @@ namespace GestãoTestes.Dominio.ModuloQuestões
 {
     public class Questão : EntidadeBase<Questão>
     {
+        public Materia materia;
         public string Enunciado { get; set; }
         public List<Respostas> Respostas { get; set; }
-        public Materia Materias { get; set; }
+        public Materia Materias {
+            get 
+            {
+              return materia;
+            }
+            set
+            {
+              this.materia = value;
+              materia.AdicionarQuestão(this);
+            }
+        }
         public int quantidadeAltermativas { get; set; }
         public override void Atualizar(Questão registro)
         {
@@ -20,6 +31,10 @@ namespace GestãoTestes.Dominio.ModuloQuestões
             this.Enunciado = registro.Enunciado;
             this.Materias = registro.Materias;  
         }
-        
+        public override string ToString()
+        {
+            return $"Enunciado: {Enunciado}";
+        }
+
     }
 }

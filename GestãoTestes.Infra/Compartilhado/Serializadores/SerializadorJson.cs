@@ -12,7 +12,7 @@ namespace GestãoTestes.Infra.Serializadores
 {
     public class SerializadorJson:ISerializador
     {
-        private const string arquivo = @"C:dados.json";
+        private const string arquivo = @"C:/dados.json";
 
         public DataContext CarregarDadosDoArquivo()
         {

@@ -15,7 +15,7 @@ namespace GestãoTestes.Dominio.ModuloMatéria
 
         public List<Questão> questoes;
         public string Nome { get; set; }
-
+       
         public Disciplinas Disciplina
         {
             get
@@ -30,6 +30,14 @@ namespace GestãoTestes.Dominio.ModuloMatéria
         }
 
         public int Serie { get; set; }
+        internal void AdicionarQuestão(Questão questão)
+        {
+            if (questoes == null)
+                questoes = new List<Questão>();
+
+
+            questoes.Add(questão);
+        }
 
         public override void Atualizar(Materia registro)
         {

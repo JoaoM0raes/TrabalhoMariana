@@ -29,6 +29,7 @@ namespace GestãoTeste.Compartilhado
             {
                 BackColor = Color.White,
                 Font = font,
+                ForeColor = Color.Black,
                 SelectionBackColor = Color.LightYellow,
                 SelectionForeColor = Color.Black
             };
@@ -64,6 +65,8 @@ namespace GestãoTeste.Compartilhado
             };
         }
 
+
+
         public static T SelecionarNumero<T>(this DataGridView grid)
         {
             const int firstLine = 0, firstColumn = 0;
@@ -71,6 +74,9 @@ namespace GestãoTeste.Compartilhado
                 return default(T);
 
             object value = grid.SelectedRows[firstLine].Cells[firstColumn].Value;
+
+            if (value == null)
+                return default(T);
 
             return (T)Convert.ChangeType(value, typeof(T));
         }

@@ -1,6 +1,6 @@
-﻿namespace GestãoTeste.Matéria
+﻿namespace GestaoTeste.Teste
 {
-    partial class tabelaMatéria
+    partial class UserControladorTeste
     {
         /// <summary> 
         /// Variável de designer necessária.
@@ -39,16 +39,16 @@
             this.grid.Location = new System.Drawing.Point(0, 0);
             this.grid.Name = "grid";
             this.grid.RowTemplate.Height = 25;
-            this.grid.Size = new System.Drawing.Size(517, 455);
+            this.grid.Size = new System.Drawing.Size(345, 370);
             this.grid.TabIndex = 0;
             // 
-            // tabelaMatéria
+            // UserControladorTeste
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.grid);
-            this.Name = "tabelaMatéria";
-            this.Size = new System.Drawing.Size(517, 455);
+            this.Name = "UserControladorTeste";
+            this.Size = new System.Drawing.Size(345, 370);
             ((System.ComponentModel.ISupportInitialize)(this.grid)).EndInit();
             this.ResumeLayout(false);
 

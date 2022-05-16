@@ -22,7 +22,7 @@ namespace GestãoTestes.Infra.Compartilhado
 
             Questões = new List<Questão>();
 
-            Testes= new List<Teste>();
+            Testes= new List<Testes>();
         }
 
         public DataContext(ISerializador serializador) : this()
@@ -38,7 +38,7 @@ namespace GestãoTestes.Infra.Compartilhado
 
         public List<Questão> Questões { get; set; }
 
-        public List<Teste> Testes { get; set; }
+        public List<Testes> Testes { get; set; }
 
         public void GravarDados()
         {
@@ -55,6 +55,8 @@ namespace GestãoTestes.Infra.Compartilhado
                 this.Matérias.AddRange(ctx.Matérias);
             if (ctx.Questões.Any())
                 this.Questões.AddRange(ctx.Questões);
+            if (ctx.Testes.Any())
+                this.Testes.AddRange(ctx.Testes);
 
 
         }

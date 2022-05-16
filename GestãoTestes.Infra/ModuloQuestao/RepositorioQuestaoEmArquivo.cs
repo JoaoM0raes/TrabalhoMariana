@@ -4,6 +4,7 @@ using GestãoTestes.Dominio.ModuloQuestões;
 using GestaoTestes.Dominio.ModuloQuestões;
 using GestãoTestes.Infra.Compartilhado;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace TrabalhoMariana
 {
@@ -11,7 +12,8 @@ namespace TrabalhoMariana
     {
         public RepositorioQuestaoEmArquivo(DataContext dataContext) : base(dataContext)
         {
-
+            if (dataContext.Questões.Count > 0)
+                contador = dataContext.Questões.Max(x => x.Numero);
         }
 
         public override List<Questão> ObterRegistros()

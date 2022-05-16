@@ -25,9 +25,8 @@ namespace GestãoTeste.Disciplina
         {
             var colunas = new DataGridViewColumn[]
             {
-                new DataGridViewTextBoxColumn { DataPropertyName = "Nome", HeaderText ="Nome"},
-
                 new DataGridViewTextBoxColumn { DataPropertyName = "Numero", HeaderText = "Numero"},
+                new DataGridViewTextBoxColumn { DataPropertyName = "Nome", HeaderText ="Nome"},
             };
 
             return colunas;

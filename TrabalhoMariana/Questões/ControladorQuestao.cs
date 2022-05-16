@@ -31,8 +31,8 @@ namespace GestaoTeste.Questões
             Questão questao = ObtemQuestãoSelecionada();
             if (questao == null)
             {
-                MessageBox.Show("Selecione uma Materia primeiro",
-                "Edição de Materias", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Selecione uma Questão primeiro",
+                "Edição de Questão", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
             CadastroQuestão cadastro = new CadastroQuestão(repositorioMateria.SelecionarTodos(), repositorioDisciplina.SelecionarTodos());
@@ -48,7 +48,12 @@ namespace GestaoTeste.Questões
         public override void Excluir()
         {
             Questão questao = ObtemQuestãoSelecionada();
-
+            if (questao == null)
+            {
+                MessageBox.Show("Selecione uma Questão primeiro",
+                "Excluir Questão", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
 
             repositorioQuestao.Excluir(questao);
             CarregarQuestoes();

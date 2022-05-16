@@ -3,6 +3,7 @@ using GestãoTeste.Disciplina;
 using GestãoTestes.Dominio.ModuloMatéria;
 using GestãoTestes.Infra.Compartilhado;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace TrabalhoMariana
 {
@@ -12,7 +13,9 @@ namespace TrabalhoMariana
 
         public RepositorioMatériaEmArquivo(DataContext dataContext) : base(dataContext)
         {
-            
+
+            if (dataContext.Matérias.Count > 0)
+                contador = dataContext.Matérias.Max(x => x.Numero);
         }
 
         public override List<Materia> ObterRegistros()

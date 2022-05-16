@@ -9,12 +9,14 @@ namespace GestaoTeste.Questões
 {
     public class ConfiguracaoToolboxQuestao : ConfiguracaoToolboxBase
     {
-        public override string TipoCadastro => "";
+        public override string TipoCadastro => "Cadastro Questão";
 
-        public override string TooltipInserir => "";
+        public override string TooltipInserir => "Inserir Nova Questão";
 
-        public override string TooltipEditar => "";
+        public override string TooltipEditar => "Editar Questão";
 
-        public override string TooltipExcluir => "";
+        public override string TooltipExcluir => "Excluir Questão";
+
+        public override string TooltipPdf => "";
     }
 }

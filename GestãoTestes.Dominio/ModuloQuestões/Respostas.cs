@@ -12,7 +12,7 @@ namespace GestaoTestes.Dominio.ModuloQuestões
         public bool Correta { get; set; }
         public override string ToString()
         {
-            return $"resposta: {Resposta}";
+            return $"{Resposta}";
         }
     }
 }

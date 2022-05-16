@@ -1,5 +1,6 @@
 ﻿using GestãoTeste.Compartilhado;
 using GestãoTeste.Disciplina;
+using GestaoTeste.Matéria;
 using GestãoTestes.Dominio.ModuloMatéria;
 using System;
 using System.Collections.Generic;
@@ -74,7 +75,7 @@ namespace GestãoTeste.Matéria
 
         public override ConfiguracaoToolboxBase ObtemConfiguracaoToolbox()
         {
-            return new ConfiguracaoToolboxDisciplina();
+            return new ConfiguracaoToolBoxMateria();
         }
 
         public override UserControl ObtemListagem()

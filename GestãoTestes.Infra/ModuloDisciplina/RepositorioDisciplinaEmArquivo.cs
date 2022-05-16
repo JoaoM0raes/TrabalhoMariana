@@ -3,6 +3,7 @@ using GestãoTeste.Disciplina;
 using GestãoTestes.Dominio.ModuloDisciplina;
 using GestãoTestes.Infra.Compartilhado;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace TrabalhoMariana
 {
@@ -12,7 +13,9 @@ namespace TrabalhoMariana
 
         public RepositorioDisciplinaEmArquivo(DataContext dataContext) : base(dataContext)
         {
-             
+
+            if (dataContext.Disciplinas.Count > 0)
+                contador = dataContext.Disciplinas.Max(x => x.Numero);
         }
         public override List<Disciplinas> ObterRegistros()
         {

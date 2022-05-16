@@ -47,11 +47,9 @@ namespace GestãoTeste.Matéria
             materia.Nome = textBoxName.Text;
             if (checkPrimeiraSerie.Checked)
             {
-                
                 materia.Serie = 1;
             }else if (checkSegundaSerie.Checked)
             {
-
                 materia.Serie = 2;
             }
 

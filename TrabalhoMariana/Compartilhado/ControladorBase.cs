@@ -12,15 +12,7 @@ namespace GestãoTeste.Compartilhado
         public abstract void Inserir();
         public abstract void Editar();
         public abstract void Excluir();
-
-        public virtual void AdicionarItens() { }
-
-        public virtual void AtualizarItens() { }
-
-        public virtual void Filtrar() { }
-
-        public virtual void Agrupar() { }
-
+        public virtual void InserirPdf() { }
         public abstract UserControl ObtemListagem();
 
         public abstract ConfiguracaoToolboxBase ObtemConfiguracaoToolbox();
